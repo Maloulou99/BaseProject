@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">baseProject</string>
+    <string name="titleFirstScreen">Parcs de catalunya</string>
+    <string name="lastAnimal">Últim animal</string>
+    <string name="description">DESCRIPCIÓ</string>
+    <string name="flora">FLORA</string>
+    <string name="fauna">FAUNA</string>
+    <string name="top_list_animal">Agila Daurada</string>
+</resources>

@@ -1,0 +1,164 @@
+[
+    {
+        "name":"Aigüestortes",
+        "image": "aiguestortes",
+        "description":"Fou declarat parc nacional el 21 d'octubre de 1955, el segon parc nacional dels Pirineus després del d'Ordesa i Mont Perdut.\n Amb una superfície total de 41.852 ha, és el tercer espai protegit més gran de Catalunya i el cinquè parc nacional més gran d'Espanya",
+        "coordinates":"42° 37' 55'' N, 0° 47' 35'' E",
+        "flora":[
+            {
+                "name":"Avellenrs"
+            },
+            {
+                "name":"Roure martinenc"
+            },
+            {
+                "name":"Freixe"
+            },
+            {
+                "name":"Faig"
+            },
+            {
+                "name":"Pi roig"
+            }
+        ],
+        "animals":{
+            "birds":[
+                {
+                    "name":"Gall fer"
+                },
+                {
+                    "name":"Àgila daurada"
+                },
+                {
+                    "name":"Voltor"
+                }
+
+            ],
+            "mammals":[
+
+                {
+                    "name":"Marmota"
+                },
+
+                {
+                    "name":"Cabriol"
+                }
+            ]
+        }
+    },
+    {
+        "name":"Zona volcànica de la garrotxa",
+        "image": "garrotxa",
+        "description":"El parc consta d'una quarantena de cons volcànics d'una edat compresa entre els 10.000 i els 700.000 anys, 10 cràters, 23 cons ben conservats i més de 20 colades de laves basàltiques.",
+        "coordinates":"42° 09' N, 2° 32' E",
+        "flora":[
+            {
+                "name":"Alzinars"
+            },
+            {
+                "name":"Fagedes"
+            },
+            {
+                "name":"Pi roig"
+            },
+            {
+                "name": "Roure martinenc"
+            }
+
+        ],
+        "animals":{
+            "birds":[
+                {
+                    "name":"Falcó pelegrí"
+                },
+                {
+                    "name":"Gralla"
+                },
+                {
+                    "name":"Gamarús"
+                }
+
+            ],
+            "mammals":[
+
+                {
+                    "name":"Cèrvol"
+                },
+
+                {
+                    "name":"mufló"
+                }
+            ]
+        }
+    },
+    {
+        "name":"Delta del l'ebre",
+        "image": "ebre",
+        "description":"El delta de l'Ebre és l'hàbitat aquàtic més important de Catalunya i presenta una riquíssima varietat d'ambients: riu, mar, badies, platges, dunes, salobrars, bosc de ribera, llacunes costaneres,",
+        "coordinates":"40° 42' 09'' N, 0° 48' 32'' E",
+        "flora":[
+            {
+                "name":"Canya"
+            },
+            {
+                "name":"Nenufars"
+            }
+
+        ],
+        "animals":{
+            "birds":[
+                {
+                    "name":"Flamenc"
+                },
+                {
+                    "name":"Gavina"
+                }
+
+            ],
+            "mammals":[
+
+                {
+                    "name":"Musaranya"
+                }
+            ]
+        }
+    },
+    {
+        "name":"Aiguamolls de l'Empordà",
+        "image": "emporda",
+        "description":"Els Aiguamolls de l'Empordà són una de les principals zones humides de Catalunya.\nEs troben ubicats a la plana empordanesa, entre les desembocadures dels rius Fluvià i Muga, en un espai caracteritzat pels cursos fluvials actuals, les antigues desembocadures dels rius, i els sistemes de canalització i rec dels conreus que històricament s'han donat en aquest lloc ric en aigua dolça.",
+        "coordinates":"42° 13 10'' N, 3° 06' 38'' E",
+        "flora":[
+            {
+                "name":"Arrossars"
+            },
+            {
+                "name":"Lirri groc"
+            }
+
+        ],
+        "animals":{
+            "birds":[
+                {
+                    "name":"Cigonya"
+                },
+                {
+                    "name":"Blauet"
+                },
+                {
+                    "name":"Martinet blanc"
+                }
+
+            ],
+            "mammals":[
+
+                {
+                    "name":"Daina"
+                },
+                {
+                    "name":"Geneta"
+                }
+            ]
+        }
+    }
+]
