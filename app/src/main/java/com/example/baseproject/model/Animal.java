@@ -28,4 +28,31 @@ public class Animal implements Serializable {
     public void setMammals(ArrayList<Item> mammals) {
         this.mammals = mammals;
     }
+
+    public String printAnimalNames() {
+        StringBuilder result = new StringBuilder();
+
+        // Birds
+        if (birds != null && !birds.isEmpty()) {
+            result.append("Birds: ");
+            for (Item bird : birds) {
+                result.append(bird.getName()).append(", ");
+            }
+            result.delete(result.length() - 2, result.length());
+            result.append("\n");
+        }
+
+        // Mammals
+        if (mammals != null && !mammals.isEmpty()) {
+            result.append("Mammals: ");
+            for (Item mammal : mammals) {
+                result.append(mammal.getName()).append(", ");
+            }
+            result.delete(result.length() - 2, result.length());
+            result.append("\n");
+        }
+
+        return result.toString();
+    }
+
 }

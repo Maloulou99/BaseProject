@@ -2,6 +2,7 @@ package com.example.baseproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,7 +10,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.baseproject.model.Animal;
 import com.example.baseproject.model.Item;
 import com.example.baseproject.model.Park;
 import com.google.gson.Gson;
@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewLastAnimal;
     private LinearLayout linearParkButtons;
     private Button buttonLastAnimal;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void loadParksFromJson() {
+    public String loadParksFromJson() {
         // Load data from JSON file and populate 'parks' ArrayList
         String json = null;
         try {
@@ -67,10 +66,11 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Log.e("MainActivity", "Failed to load JSON file");
         }
+        return null;
     }
-    private void createButtons() {
+    public String createButtons() {
         if (parks != null) {
-            for (Park park : parks) {
+            for (final Park park : parks) {
                 Button button = new Button(this);
                 button.setText(park.getName());
                 button.setBackgroundResource(R.color.orange_button);
@@ -86,18 +86,18 @@ public class MainActivity extends AppCompatActivity {
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        displayParkDetails(park);
+                        Intent intent = new Intent(MainActivity.this, ParkDetailsActivity.class);
+                        intent.putExtra("selected_park", park);
+                        startActivity(intent);
                     }
                 });
                 linearParkButtons.addView(button);
             }
-        }
+        } return "";
     }
-
 
     private void button_animal() {
         StringBuilder lastTenAnimals = new StringBuilder();
-        Button button = new Button(this);
 
         if (parks != null && parks.size() > 0) {
             for (Park park : parks) {
@@ -119,7 +119,4 @@ public class MainActivity extends AppCompatActivity {
         textViewLastAnimal.setText(lastAnimalSeen);
     }
 
-    private void displayParkDetails(Park park) {
-        textViewLastAnimal.setText("Last Animal Seen: ");
-    }
 }

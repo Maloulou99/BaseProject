@@ -51,14 +51,13 @@
 
     <Button
         android:id="@+id/buttonLastAnimal"
+        android:background="#C4C5C5"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/ContainerGray"
         android:text="@string/top_list_animal"
-        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
